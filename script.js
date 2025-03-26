@@ -1,0 +1,1 @@
+console.log(getComputedStyle(document.querySelector("h1")).fontSize);
