@@ -403,3 +403,95 @@ body {
     line-height: 1.5;
 }
 /*TODO End Portfolio */
+/*TODO Start About */
+.about {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.about .container {
+
+}
+.about .container .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.about .container .about-container .about-image {
+    position: relative;
+    width: 280px;
+    height: 390px;
+    display: flex;
+    justify-content: flex-end;
+}
+.about .container .about-container .about-image::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: calc(100% + 70px);
+    background-color: #ebeced;
+    z-index: -1;
+    top: -35px;
+    left: 0;
+}
+.about .container .about-container .about-image::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: calc(100% - 80px);
+    top: -35px;
+    right: -150px;
+    z-index: -1;
+    border-left: 80px solid var(--main-color);
+    border-bottom: 80px solid var(--main-color);
+}
+.about .container .about-container .about-image img {
+    width: 260px;
+}
+.about .container .about-container .about-text {
+    position: relative;
+    width: 50%;
+}
+.about .container .about-container .about-text::before {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 2px;
+    background-color: var(--main-color);
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+.about .container .about-container .about-text p {
+    line-height: 2;
+    margin: 0;
+    padding: 50px 0;
+}
+.about .container .about-container .about-text p:first-child {
+    font-weight: bold;
+}
+.about .container .about-container .about-text p:last-child {
+    color: var(--p-777-color);
+}
+
+@media (max-width: 991px) {
+    .about .container .about-container {
+        flex-direction: column;
+    }
+    .about .container .about-container .about-image {
+        width: 260px;
+    }
+    .about .container .about-container .about-image::before,
+    .about .container .about-container .about-image::after {
+        display: none;
+    }
+    .about .container .about-container .about-text {
+        width: 100%;
+        text-align: center;
+    }
+    .about .container .about-container .about-text::before {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+/*TODO End About */
