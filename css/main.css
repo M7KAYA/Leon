@@ -562,7 +562,7 @@ body {
     }
 }
 /*TODO End Contact */
-/*TODO Start Contact */
+/*TODO Start Footer */
 .footer-section {
     background-color: var(--secondary-color);
     padding-top: var(--section-padding);
@@ -580,4 +580,4 @@ body {
     color: var(--main-color);
     font-weight: bold;
 }
-/*TODO End Contact */
+/*TODO End Footer */
