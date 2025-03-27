@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leon</title>
-    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -18,37 +17,38 @@
   <body>
     <div class="page">
       <!--TODO Start Header -->
-      <div class="header">
+      <header>
         <div class="container">
           <div class="logo">
             <img src="images/logo.png" alt="Leon Logo" />
           </div>
-          <div class="links">
-            <span class="icon">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-            <ul>
+          <nav class="links">
+            <button class="menu-icon" id="menuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="menuList" aria-label="Main Navigation">
               <li><a href="#services-section">Services</a></li>
               <li><a href="#portfolio-section">Portfolio</a></li>
               <li><a href="#about-section">About</a></li>
               <li><a href="#contact-section">Contact</a></li>
             </ul>
-          </div>
+          </nav>
         </div>
-      </div>
+        <button id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+      </header>
       <!--TODO End Header -->
       <!--TODO Start Landing -->
-      <div class="landing-section" id="landing-section">
+      <section class="landing-section" id="landing-section">
         <div class="landing-text">
           <h1>Hello There</h1>
           <p>We are Leon - Super Creative & Minimal Agency Web Template</p>
         </div>
-      </div>
+      </section>
       <!--TODO End Landing -->
       <!--TODO Start Features -->
-      <div class="features-section" id="features-section">
+      <section class="features-section" id="features-section">
         <div class="container">
           <div class="feature">
             <i class="fa-solid fa-lightbulb fa-3x"></i>
@@ -75,10 +75,10 @@
             </p>
           </div>
         </div>
-      </div>
+      </section>
       <!--TODO End Features -->
       <!--TODO Start Services -->
-      <div class="services-section" id="services-section">
+      <section class="services-section" id="services-section">
         <div class="container">
           <div class="services-heading heading-box">
             <h2 class="heading">Services</h2>
@@ -134,10 +134,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!--TODO End Services -->
       <!--TODO Start Portfolio -->
-      <div class="portfolio-section" id="portfolio-section">
+      <section class="portfolio-section" id="portfolio-section">
         <div class="container">
           <div class="portfolio-heading heading-box">
             <h2 class="heading">Portfolio</h2>
@@ -149,7 +149,7 @@
                 <img src="images/portfolio-1.jpg" alt="Project One Image" />
               </div>
               <div class="project-text">
-                <p>Project Here</p>
+                <h3>Project Here</h3>
                 <p>
                   My creative ability is very difficult to measure because it
                   can manifest in so many surprising and.
@@ -161,7 +161,7 @@
                 <img src="images/portfolio-2.jpg" alt="Project One Image" />
               </div>
               <div class="project-text">
-                <p>Project Here</p>
+                <h3>Project Here</h3>
                 <p>
                   My creative ability is very difficult to measure because it
                   can manifest in so many surprising and.
@@ -173,7 +173,7 @@
                 <img src="images/portfolio-3.jpg" alt="Project One Image" />
               </div>
               <div class="project-text">
-                <p>Project Here</p>
+                <h3>Project Here</h3>
                 <p>
                   My creative ability is very difficult to measure because it
                   can manifest in so many surprising and.
@@ -182,10 +182,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!--TODO End Portfolio -->
       <!--TODO Start About -->
-      <div class="about-section" id="about-section">
+      <section class="about-section" id="about-section">
         <div class="container">
           <div class="about-heading heading-box">
             <h2 class="heading">About</h2>
@@ -211,10 +211,10 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!--TODO End About -->
-      <!--TODO Start About -->
-      <div class="contact-section" id="contact-section">
+      <!--TODO Start Contact -->
+      <section class="contact-section" id="contact-section">
         <div class="container">
           <div class="contact-heading heading-box">
             <h2 class="heading">Contact</h2>
@@ -222,7 +222,7 @@
           </div>
           <div class="contact-container">
             <h2>Feel free to drop us a line at:</h2>
-            <a href="mailti:mo742284@gmail.com">leonagency@mail.com</a>
+            <a href="mailto:mo742284@gmail.com">leonagency@mail.com</a>
             <div>
               <span>Find Us On Social Networks</span>
               <ul>
@@ -233,14 +233,14 @@
             </div>
           </div>
         </div>
-      </div>
-      <!--TODO End About -->
+      </section>
+      <!--TODO End Contact -->
       <!--TODO Start Footer -->
-      <div class="footer-section" id="footer-section">
+      <footer class="footer-section" id="footer-section">
         <div>&copy; 2021 <span>Leon</span> All Right Reserved</div>
-      </div>
+      </footer>
       <!--TODO End Footer -->
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
